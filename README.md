@@ -184,3 +184,23 @@ Evaluate the trained model:
 This project is for educational and research purposes only.
 It is not financial advice and should not be connected to a live
 brokerage account without rigorous independent testing.
+
+## 📈 Preliminary Evaluation Results
+
+The DQN agent was evaluated on a chronological test dataset and compared against a Buy-and-Hold baseline.
+
+| Metric                  |  DQN Agent | Buy-and-Hold |
+| ----------------------- | ---------: | -----------: |
+| Initial Portfolio Value | $10,000.00 |   $10,000.00 |
+| Final Portfolio Value   | $10,015.62 |   $13,082.90 |
+| Total Return            |      0.16% |       30.83% |
+
+### Additional DQN Metrics
+
+- **Total Trades:** 34
+- **Maximum Drawdown:** -0.53%
+- **Annualized Sharpe Ratio:** 0.244
+
+**Interpretation:** In this preliminary experiment, the DQN agent underperformed the Buy-and-Hold benchmark. The results are educational and do not demonstrate a profitable trading strategy.
+
+_Past or simulated performance does not guarantee future results. This project is for educational purposes only and is not financial advice._
