@@ -1,5 +1,28 @@
-
 # Stock Trading Bot Using Deep Reinforcement Learning
+
+## 📊 Dashboard Preview
+
+The Streamlit dashboard provides an interactive view of the DQN trading agent's performance, trading signals, portfolio risk, and trade history.
+
+### Dashboard Overview
+
+![Dashboard Overview](screenshots/dashboard-overview.png)
+
+### DQN vs Buy-and-Hold Benchmark
+
+![Benchmark Comparison](screenshots/benchmark-comparison.png)
+
+### Portfolio Drawdown
+
+![Portfolio Drawdown](screenshots/portfolio-drawdown.png)
+
+### Stock Price and Trading Signals
+
+![Trading Signals](screenshots/trading-signals.png)
+
+### Trading History
+
+![Trading History](screenshots/trading-history.png)
 
 ## 1. Project Overview
 
@@ -7,6 +30,7 @@ This project implements a stock trading simulation using Deep
 Reinforcement Learning (DRL), specifically a Deep Q-Network (DQN).
 
 The agent learns to select among three actions:
+
 - Hold
 - Buy
 - Sell
@@ -47,19 +71,23 @@ profitable trading results.
 ## 5. Reinforcement Learning Design
 
 ### State
+
 The state includes five market features and two portfolio
 features: normalized cash and the market value of holdings.
 
 ### Actions
+
 - 0: Hold
 - 1: Buy
 - 2: Sell
 
 ### Reward
+
 The reward is the change in portfolio value between steps,
 including simulated transaction fees.
 
 ### DQN Components
+
 - Neural network
 - Experience replay buffer
 - Target network
@@ -79,15 +107,15 @@ including simulated transaction fees.
 
 ## 7. Initial Evaluation Results
 
-| Metric | Result |
-|---|---:|
-| Initial Capital | $10,000.00 |
-| DQN Final Portfolio | $10,015.62 |
-| DQN Return | 0.16% |
-| Buy-and-Hold Return | 30.83% |
-| Executed DQN Trades | 34 |
-| Maximum Drawdown | -0.53% |
-| Annualized Sharpe Ratio | 0.244 |
+| Metric                  |     Result |
+| ----------------------- | ---------: |
+| Initial Capital         | $10,000.00 |
+| DQN Final Portfolio     | $10,015.62 |
+| DQN Return              |      0.16% |
+| Buy-and-Hold Return     |     30.83% |
+| Executed DQN Trades     |         34 |
+| Maximum Drawdown        |     -0.53% |
+| Annualized Sharpe Ratio |      0.244 |
 
 These are preliminary results from the current implementation.
 The DQN strategy underperformed the Buy-and-Hold benchmark.
@@ -98,6 +126,7 @@ costs, and experimental setup.
 ## 8. Project Structure
 
 Stock_Trading_Bot_DRL/
+
 - agents/
   - dqn_agent.py
 - data/
